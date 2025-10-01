@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Orbitron:wght@400;700&family=Space+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    background-image: url(./2a4a2cc1-17d2-4d1c-9311-3e2bae4aa753.png); /* updated image */
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+}
+
+/* Container for layout control */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+/* Logo-style heading */
+.heading {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 120px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+/* Small label-style text */
+.middle {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    margin-bottom: 20px; 
+}
+
+/* Main slogan text */
+.last {
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Styled button */
+button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    position: relative;
+    z-index: 10;
+}
+
+button:hover {
+    background-color: #333;
+}
