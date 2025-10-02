@@ -1,0 +1,143 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Now Display", Arial, sans-serif;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+  background: #fafafa;
+  color: #111;
+}
+
+#main{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Navigation */
+#nav{
+  padding: 15px 30px;
+}
+
+#nav a{
+  color: black;
+  text-decoration: none;
+  font-size: 22px;
+  margin-right: 25px;
+  position: relative;
+}
+
+#nav a::after{
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: black;
+  transition: 0.3s;
+}
+
+#nav a:hover::after{
+  width: 100%;
+}
+
+/* Main Heading */
+#main>h1{
+  font-size: 240px;
+  font-weight: 200;
+  padding-left: 50px;
+  background: linear-gradient(to right, #111, #888);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Bottom Left */
+#btmleft{
+  width: 300px;
+  position: absolute;
+  bottom: 22%;
+  left: 3%;
+}
+
+#btmleft h3{
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+#btmleft h4{
+  margin-top: 30px;
+  font-size: 24px;
+}
+
+#btmleft p{
+  font-size: 16px;
+  margin-top: 4px;
+  line-height: 1.4;
+  color: #333;
+}
+
+/* Bottom bar */
+#bottombar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  padding: 20px 50px;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  background: rgba(255,255,255,0.6);
+}
+
+#bottombar h1{
+  font-size: 26px;
+}
+
+#bottombar a{
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+#bottombar a:hover{
+  color: #e63946;
+}
+
+/* Images */
+#main>img{
+  position: absolute;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  object-fit: cover;
+}
+
+#main>img:hover{
+  transform: scale(1.03);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+#main #first{
+  height: 440px;
+  top: 40%;
+  left: 55%;
+}
+
+#main #second{
+  height: 380px;
+  top: 35%;
+  left: 40%;
+}
+
+#main #third{
+  height: 210px;
+  top: 60%;
+  left: 35%;
+}
