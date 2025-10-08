@@ -1,0 +1,369 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  background-color: #fff;
+  scroll-behavior: smooth;
+}
+/*Navigation Bar */
+#nav {
+  height: 44px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, .8);;
+  backdrop-filter: saturate(180%) blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: background 0.3s ease;
+}
+
+#nav a {
+  text-decoration: none;
+  color: rgba(14, 14, 14, 0.8);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  transition: color 0.3s ease;
+  padding: 0 4px;
+}
+
+#nav a:hover {
+  color: #cf01ef;
+}
+
+#nav h4 i {
+  color: rgba(14, 14, 14, 0.8);
+  font-size: 17px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+#nav h4 i:hover {
+  color: #000;;
+}
+#nav h4:first-child {
+  margin-right: 10px;
+}
+#nav h4:last-child {
+  margin-left: 10px;
+}
+
+
+/* Space below navbar so content doesn't hide behind it */
+body {
+  padding-top: 44px;
+}
+
+/* Hero (Diwali) Section */
+.gift-bg {
+  background-image: url("hero_diwali_2025_endframe__kjxalx8t7ia2_small_2x.jpg");
+  height: 88vh;
+  margin-top: 40px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.text-box {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.gift-heading {
+  color: #1d1d1f;
+  font-size: 56px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.gift-text {
+  font-size: 22px;
+  line-height: 1.3;
+  color: #1d1d1f;
+  max-width: 700px;
+  margin: 0;
+}
+
+.btn {
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 500;
+  border: 1px solid #06c;
+  padding: 11px 28px;
+  border-radius: 980px;
+  background: transparent;
+  color: #06c;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: #06c;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 113, 227, 0.4);
+}
+
+/* iPhone 17 Pro Section */
+.iphone-pro-bg {
+  background-image: url("hero_iphone_17_pro__bknyzxfk2agi_large.jpg");
+  height: 78vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 80px;
+}
+
+.iphone-pro-box {
+  text-align: center;
+}
+
+.iphone-pro-heading {
+  color: #f5f5f7;
+  font-size: 56px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.iphone-pro-text {
+  font-size: 26px;
+  font-weight: 400;
+  color: #f5f5f7;
+  margin: 8px 0 16px;
+}
+
+.iphone-pro-Learn-more,
+.iphone-pro-btn {
+  cursor: pointer;
+  font-size: 17px;
+  border-width: 1px;
+  padding: 11px 24px;
+  border-radius: 980px;
+  transition: all 0.3s ease;
+  margin: 0 8px;
+}
+
+/* Primary button */
+.iphone-pro-Learn-more {
+  background: #06c;
+  color: white;
+  border: 1px solid #06c;
+}
+
+.iphone-pro-Learn-more:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 113, 227, 0.4);
+}
+
+/* Secondary button */
+.iphone-pro-btn {
+  color: #2997ff;
+  border: 1px solid #06c;
+  background: transparent;
+}
+
+.iphone-pro-btn:hover {
+  background: #06c;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(41, 151, 255, 0.4);
+}
+
+/* iPhone Air Section */
+.iphone-air-bg {
+  background-image: url("hero_iphone_air__0gxyavihpiqu_large_2x.jpg");
+  width: 100%;
+  height: 85vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.iphone-air-box {
+  text-align: center;
+}
+
+.iphone-air-heading {
+  color: #1d1d1f;
+  font-size: 56px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.iphone-air-text {
+  font-size: 26px;
+  font-weight: 400;
+  color: #1d1d1f;
+  margin: 8px 0 16px;
+}
+
+.iphone-air-Learn-more,
+.iphone-air-btn {
+  cursor: pointer;
+  font-size: 17px;
+  border-width: 1px;
+  padding: 11px 24px;
+  border-radius: 980px;
+  transition: all 0.3s ease;
+  margin: 0 8px;
+}
+
+.iphone-air-Learn-more {
+  background: #06c;
+  color: white;
+  border: 1px solid #06c;
+}
+
+.iphone-air-Learn-more:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 113, 227, 0.4);
+}
+
+.iphone-air-btn {
+  color: #2997ff;
+  border: 1px solid #06c;
+  background: transparent;
+}
+
+.iphone-air-btn:hover {
+  background: #06c;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(41, 151, 255, 0.4);
+}
+
+/*  Product Grid Section */
+.image-flex {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 12px;
+  background-color: #fff;
+}
+
+.image {
+  position: relative;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 580px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.05);
+}
+
+.image:hover {
+  transform: scale(1.01);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Background images  */
+.image-1 { background: url("/Apple-website/promo_icloud_plus__d4639vh3tz2a_small_2x.jpg") center/cover no-repeat; }
+.image-2 { background: url("/Apple-website/promo_icloud_plus__d4639vh3tz2a_small_2x.jpg") center/cover no-repeat; }
+.image-3 { background: url("/Apple-website/promo_icloud_plus__d4639vh3tz2a_small_2x.jpg") center/cover no-repeat; }
+.image-4 { background: url("/Apple-website/promo_icloud_plus__d4639vh3tz2a_small_2x.jpg") center/cover no-repeat; }
+.image-5 { background: url("/Apple-website/promo_icloud_plus__d4639vh3tz2a_small_2x.jpg") center/cover no-repeat; }
+.image-6 { background: url("/Apple-website/promo_icloud_plus__d4639vh3tz2a_small_2x.jpg") center/cover no-repeat; }
+
+/* Text inside the product cards */
+.image-content {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #1d1d1f;
+  width: 80%;
+}
+
+.image-content h2 {
+  font-size: 32px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.image-content p {
+  font-size: 18px;
+  color: #1d1d1f;
+  margin-bottom: 20px;
+}
+
+.btn-group button {
+  font-size: 16px;
+  border-radius: 980px;
+  padding: 8px 20px;
+  border: 1px solid #06c;
+  background: transparent;
+  color: #06c;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-group button:hover {
+  background: #06c;
+  color: #fff;
+}
+
+
+
+/* Footer */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #1d1d1f;
+}
+
+.apple-footer {
+  background-color: #f5f5f7;
+  padding: 20px 12%;
+}
+
+.footer-disclaimer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #6e6e73;
+}
+
+.footer-disclaimer li {
+  margin-bottom: 12px;
+}
+
+.footer-disclaimer a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.footer-disclaimer a:hover {
+  text-decoration: underline;
+}
