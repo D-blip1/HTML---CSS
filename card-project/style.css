@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: blanchedalmond;
+    padding: 30px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    height: 300px;
+    width: 250px;
+    border-radius: 20px;
+    background-color: gold;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.bottom {
+    height: 45%;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(0,0,0,0.85));
+    position: absolute;
+    bottom: -45%;
+    transition: all ease 0.4s;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    font-size: 18px;
+}
+
+.card:hover .bottom {
+    bottom: 0;
+}
+
+.bottom h4 {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.bottom i {
+    font-size: 22px;
+    transition: all 0.3s ease;
+}
+
+.bottom i:hover {
+    color: red;
+    transform: scale(1.2);
+}
