@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Inter:wght@300;400&display=swap");
+
+* {
+  margin: 0%; 
+  padding: 0%;
+  outline: none;
+  box-sizing: border-box;
+  font-family: fantasy;
+}
+
+html, body {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  text-align: center;
+  background: #dde1e7;
+}
+
+.container{
+    background: #dde1e7;
+    padding: 25px;
+    border-radius: 3px;
+    box-shadow: -3px -3px 7px #ffffff73,
+                3px 3px 5px rgba(94,104,121,.288);
+     
+}
+
+.container .pagination{
+    display: flex;
+    list-style: none;
+}
+
+.container .pagination li{
+    flex: 1;
+    margin: 0 5px;
+    background: #dde1e7;
+    border-radius: 3px;
+    box-shadow: -3px -3px 7px #ffffff73,
+                3px 3px 5px rgba(94,104,121,.288);
+}
+
+.pagination li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #4d3252;
+    height: 45px;
+    width: 55px;
+    display: block;
+    line-height: 45px;
+}
+
+.pagination li:first-child a{
+    width: 120px;
+    margin: 0 15px 0 0;
+}
+.pagination li:last-child a{
+    width: 100px;
+    margin: 0 0 0 0;
+}
+
+/* Optional: hover effect for better interaction */
+.container .pagination li:hover {
+    transform: translateY(-2px);
+    box-shadow: -1px -1px 5px #ffffff73,
+                1px 1px 5px rgba(94,104,121,.288);
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+
