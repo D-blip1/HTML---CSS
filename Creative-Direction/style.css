@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'Me';
+  src: url(/Creative-Direction/maellen-font/Maellen-e9j06.otf);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Inter:wght@300;400&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 300px);
+  grid-template-areas: "a b" "a c" "a d";
+  gap: 10px;
+  margin: 0 30%;
+  position: relative;
+}
+.main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.item1 {
+  grid-area: a;
+}
+
+.item2 {
+  grid-area: b;
+}
+
+.item3 {
+  grid-area: c;
+}
+
+.item4 {
+  grid-area: d;
+}
+
+.item2 img, .item3 img, .item4 img {
+  filter: grayscale(90%) brightness(0.8);
+}
+
+.overlay {
+  color: rgb(255, 255, 255);
+  /* position: relative; */
+  
+
+}
+.overlay .top{
+  position: absolute;
+  top: 50px;
+  left: 0;           /* align to left edge of container */
+  width: 100%;       /* span full width */
+  display: flex;     /* make it a flex container */
+  justify-content: space-between; /* spread items */
+  padding: 0px 50px;   /* optional: horizontal padding */
+  box-sizing: border-box;
+  margin-left: 10px;
+  /* color: yellow; */
+  
+}
+.overlay .middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.overlay .middle h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  /* color: white; */
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+.cd-parent{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-between;
+  width: 100%;
+}
+.creative {
+  font-size: 4rem;
+  font-weight: 100;
+  letter-spacing: -1px;
+  /* color: white; */
+  line-height: 0.5;
+}
+
+
+.c{
+  font-family: 'Me';
+  font-size: 4.2rem;
+}
+.d{
+  font-family: 'Me' ;
+  font-size: 4.2rem;
+  transform: translateY(10px);
+}
+
+.direction {
+  font-weight: 100;
+  font-size: 4rem;
+  letter-spacing: 1px;
+  padding-left: 60px;
+  /* color: white; */
+  line-height: 1;
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: translate(20px, 0);
+}
+
+.overlay .bottom{
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  width: 500px;
+}
+
